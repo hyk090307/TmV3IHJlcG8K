@@ -1,0 +1,139 @@
+Package: apt
+Version: 1.8.2.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1792
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libapt (>= 1.8.2.2), apt-key, berkeleydb
+Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt1.8
+Replaces: apt1.8, apt1.4
+Provides: apt1.8 (=1.8.2.2)
+Filename: debs/apt_1.8.2.2-1_iphoneos-arm.deb
+Size: 147824
+MD5sum: 409dcabe29d3110839461f8246f7521c
+SHA1: e7a9a6dffaebc35aeb2ccc2a840a5938836fc6e8
+SHA256: 903eed12400f4a295c0857cbc3fb86c99ba33a7ffe65051de1a3e89c9dd008a7
+Section: Packaging
+Priority: standard
+Description: the advanced packaging tool from Debian
+Name: APT
+
+Package: apt-key
+Version: 1.8.2.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 64
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: coreutils, libapt
+Conflicts: apt7-key (<<1:0)
+Breaks: apt7-key (<<1:0)
+Replaces: apt (<< 1:0-1), apt7 (<< 0.7.20.2-4), apt7-key
+Filename: debs/apt-key_1.8.2.2-1_iphoneos-arm.deb
+Size: 8728
+MD5sum: 10a665cbf7ccd53d59da8abcea60ad29
+SHA1: 979a3fc9c5c87c4d9592641bb0a3c62e4609e75a
+SHA256: 879b853e11af6fba0617c4093a291d5fd72ea768a5a20301fcd94bbe44808356
+Section: Packaging
+Priority: standard
+Description: repository encryption key management tool
+Name: APT (apt-key)
+
+Package: cycript
+Version: 0.9.594
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: readline, adv-cmds, mobilesubstrate (>= 0.9.6300)
+Breaks: cydget (<< 0.9.4008)
+Filename: debs/cycript_0.9.594_iphoneos-arm.deb
+Size: 1225008
+MD5sum: cb2d5d1a2806e5da8d2d80c767b0cd36
+SHA1: 1688b612736ae9e51b30230f4519a60865a1d6ba
+SHA256: d522870cf118466a27854ed0d3ead9fa1f102365016375e204c97d34a9408ca1
+Section: Development
+Priority: optional
+Description: runtime execution server and disassembler
+Tag: purpose::daemon, role::developer
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cycript/
+Name: Cycript
+
+Package: cydia
+Version: 1.1.9
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 2864
+Pre-Depends: debianutils
+Depends: apr-lib, apt7-lib, apt7-key, cydia-lproj, darwintools, debianutils, org.thebigboss.repo.icons, pcre, sed, shell-cmds, system-cmds, uikittools (>= 1.1.4)
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: debs/cydia_1.1.9_iphoneos-arm.deb
+Size: 724788
+MD5sum: 0d88b6bd941f30899b011f07e213d645
+SHA1: e8b413e8bfa956b497c919a68463c187a04c1a15
+SHA256: 763bf6367aa5249879aa243a4f97625111197f9a380835d7c01a0cd327f0b168
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Name: Cydia Installer
+
+Package: libapt
+Version: 1.8.2.2-1
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3624
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bzip2, dpkg (>= 1.14.25-9), gnupg, gzip, lz4, lzma, xz, libapt-pkg5.0 (>= 1.8.2.2), gnutls
+Conflicts: apt7-lib (<<1:0), apt7 (<<1:0), apt7-key (<<1:0), com.mc.xz
+Breaks: cydia (<< 1.1.10), aptitude (<< 0.4.11.11-6), apt7-lib (<< 1:0)
+Filename: debs/libapt_1.8.2.2-1_iphoneos-arm.deb
+Size: 304718
+MD5sum: c247457cb9188b9c9e33d28b4b956ad3
+SHA1: 4e41edc7c787a5efe63311e0b0d45aa9e0b1793d
+SHA256: a7930bdab9c626283a0c706c294d626784fa4345f58ae9fa657f30256b5b534f
+Section: Packaging
+Priority: required
+Description: the advanced packaging library from Debian
+Name: APT (lib)
+
+Package: libapt-pkg5.0
+Version: 1.8.2.2-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3456
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bzip2, lz4, lzma, xz
+Conflicts: apt7-lib (<<1:0), com.mc.xz (<<5.2.4-7)
+Provides: libapt-pkg (=1.8.2.2)
+Filename: debs/libapt-pkg5.0_1.8.2.2-1_iphoneos-arm.deb
+Size: 536688
+MD5sum: d6996ad60172c960b02ca20991c42157
+SHA1: 3288bc6be38a6a88248c1f2a658aa981688a914f
+SHA256: 2386c434c8d2d34e39fd20ac69b8b41070183e3fa1cde288479fb8c4f5889750
+Section: Packaging
+Priority: required
+Description: the advanced packaging library from Debian
+Name: APT (libapt-pkg)
+
+Package: org.coolstar.sileo
+Version: 2.2.6
+Architecture: iphoneos-arm
+Maintainer: Hayden Seay <me@diatr.us>
+Depends: firmware (>= 12.0), firmware (>= 12.2) | org.swift.libswift (>= 5.0), coreutils (>= 8.31-1), dpkg (>= 1.19.7-2), apt (>= 1.8.2), libzstd1
+Filename: debs/org.coolstar.sileo_2.2.6_iphoneos-arm.deb
+Size: 2006476
+MD5sum: 9c6d562f5d3c097ce5450fad85cf9574
+SHA1: de402f69af4bbd255c4ee4a87a1d16188cfbe193
+SHA256: 21facaf703f83b930391040edbe327f3c0d8730b31c3962d974aefee421c8e0d
+Section: Packaging
+Description: A modern APT package manager frontend
+Author: Sileo Team <getsileoapp@gmail.com>
+Icon: https://getsileo.app/img/icon.png
+Name: Sileo
+Sileodepiction: https://featuredpage.getsileo.app/depiction.json
+
